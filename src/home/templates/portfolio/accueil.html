@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        <!-- DEBUT SECTION -->
+        <div class="section text">
+            <div class="cadre">
+                <div>
+                    <img src="{% static 'images/patate.jpg' %}" alt="Une belle patate souriante" id="photo_patate">
+                    <p>
+                        <br>
+                        <strong>Potati</strong>
+                        <br><br>
+                        I just want be a potato !
+                        <br>
+                        Not an artist
+                    </p>
+                </div>
+            </div>
+            <div class="competence">
+                <span class="left">Residence :</span><span class="right">Potaya</span>
+                <br>
+                <span class="left">City :</span><span class="right">Poutam City</span>
+                <br>
+                <span class="left">Age :</span><span class="right">23 Patates</span>
+                <br><br>
+                <div class="line_competence"></div>
+                <br><br>
+                <span class="left">html</span><span class="right" >90 %</span>
+                <br>
+                <div class="b3">
+                    <div style="width: 90%;"></div>
+                </div>
+                <br>
+                <span class="left">CSS</span><span class="right">45 %</span>
+                <br>
+                <div class="b3">
+                    <div style="width: 45%;"></div>
+                </div>
+                <br>
+                <span class="left">Js</span><span class="right">40 %</span>
+                <br>
+                <div class="b3">
+                    <div style="width: 40%;"></div>
+                </div>
+                <br>
+                <span class="left">Python</span><span class="right">70%</span>
+                <br>
+                <div class="b3">
+                    <div style="width: 70%;"></div>
+                </div>
+                <br>
+                <span class="left">SQL</span><span class="right">55%</span>
+                <br>
+                <div class="b3">
+                    <div style="width: 55%;"></div>
+                </div>
+                <br><br>
+                <div class="line_competence"></div>
+                <br>
+                <p class="checked">&#10003; <span class="col_creme">Git, GitHub</span></p>
+                <p class="checked">&#10003; <span class="col_creme">Django</span></p>
+                <br><br>
+                <div class="line_competence"></div>
+                <br>
+                <a href="{% static 'images/patate.jpg' %}" download class="link_download col_creme">DOWNLOAD CV<img class="ico_dow" src="{% static 'images/ico_download.svg' %}" alt="Icone de telechargement en mouvement"></img></a>
+            </div>
+            <div class="publicite">
+                <a href="{% static 'images/patate.jpg' %}"><img class="ico_dow" src="{% static 'images/ico_linkedin.svg' %}" alt="Icone de linkedin"></img></a>
+                <a href="{% static 'images/patate.jpg' %}"><img class="ico_dow" src="{% static 'images/ico_github.svg' %}" alt="Icone de github"></img></a>
+                <a href="{% static 'images/patate.jpg' %}"><img class="ico_dow" src="{% static 'images/ico_twitter.svg' %}" alt="Icone de twitter"></img></a>
+            </div>
+        </div>
+        <!-- FIN SECTION -->
+        <!-- DEBUT MAIN -->
+        <div class="main">
+            <div class="header text">
+                <div>
+                    <h1>Portfolio !</h1>
+                    <img src="{% static 'images/monsieur_patate.png' %}" alt="Monsieur patate">
+                </div>
+            </div>
+            <div class="nav text">
+                Nav
+            </div>
+            <div class="body text">
+                Body
+            </div>
+        </div>
+        <!-- FIN MAIN -->
+        <!-- DEBUT PARAMETRE -->
+        <div class="parametre">
+            Parametre
+        </div>
+        <!-- FIN PARAMETRE -->
+    </div>
+</body>
+
+</html>
