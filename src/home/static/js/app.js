@@ -1,19 +1,19 @@
-var ico_nav = document.getElementById("button_navigation");
-var ico_settings = document.getElementById("button_settings");
+var button_navigation = document.getElementById("button_navigation");
+var button_settings = document.getElementById("button_settings");
 
-ico_nav.addEventListener("click", function() {
+button_navigation.addEventListener("click", function() {
 
-    if (ico_nav.getAttribute("src") == "../static/images/navigation2.svg") {
-        ico_nav.setAttribute("src", "../static/images/navigation.svg")
-        ico_settings.style.display = "none";
+    if (button_navigation.getAttribute("src") == "../static/images/button_navigation2.svg") {
+        button_navigation.setAttribute("src", "../static/images/button_navigation.svg")
+        button_settings.style.display = "none";
     }
     else {
-        ico_nav.setAttribute("src", "../static/images/navigation2.svg")
-        ico_settings.style.display = "block";
+        button_navigation.setAttribute("src", "../static/images/button_navigation.svg")
+        button_settings.style.display = "block";
     }
 
 });
 
-ico_settings.addEventListener("click", function () {
+button_settings.addEventListener("click", function () {
     alert("wesh");
 });

@@ -6,21 +6,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <!-- CSS only -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 
 <body>
-    <div class="container">
+    <div id="container">
         <!-- DEBUT SECTION -->
-        <div class="section">
-            <div class="cadre">
+        <div id="section">
+            <div id="cadre">
                 <div>
                     <img src="{% static 'images/photo_profil.jpg' %}" alt="Photo de profil" id="photo_profil">
                     <p>
                         <br>
-                        <strong class="color_white">Gascon Mickael</strong>
+                        <strong id="name_nickname" class="color_white">Gascon Mickael</strong>
                         <br><br>
                         <p class="color_gold">
                             Developpeur Python
@@ -28,7 +28,7 @@
                     </p>
                 </div>
             </div>
-            <div class="competence">
+            <div id="competence">
                 <div class="marg_10">
                     <span class="left color_gold">Residence :</span><span class="right color_white">France</span>
                 </div>
@@ -40,9 +40,8 @@
                 <div class="marg_10">
                     <span class="left color_gold">Age :</span><span class="right color_white">23</span>
                 </div>
-                <br><br>
+                <br>
                 <div class="line_competence"></div>
-                <br><br>
                 <span class="left color_gold">html</span><span class="right color_white" >90 %</span>
                 <br>
                 <div class="b3">
@@ -72,37 +71,33 @@
                 <div class="b3">
                     <div style="width: 55%;"></div>
                 </div>
-                <br><br>
                 <div class="line_competence"></div>
-                <br>
-                <p class="checked">&#10003; <span class="col_creme">Git, GitHub</span></p>
-                <p class="checked">&#10003; <span class="col_creme">Django</span></p>
-                <br><br>
+                <p class="checked">&#10003; <span>Git, GitHub</span></p>
+                <p class="checked">&#10003; <span>Django</span></p>
                 <div class="line_competence"></div>
-                <br>
-                <a href="{% static 'images/patate.jpg' %}" download class="link_download color_gold">DOWNLOAD CV<img class="ico_dow" src="{% static 'images/ico_download.svg' %}" alt="Icone de telechargement en mouvement"></img></a>
+                <a href="{% static 'images/patate.jpg' %}" download id="link_download" class="color_gold">DOWNLOAD CV<img class="ico_dow" src="{% static 'images/ico_download.svg' %}" alt="Icone de telechargement en mouvement"></img></a>
             </div>
-            <div class="publicite">
+            <nav id="publicite">
                 <a href="https://www.linkedin.com/in/micka%C3%ABl-gascon-0999a7224/" target="_blank"><img class="ico_dow" src="{% static 'images/ico_linkedin.svg' %}" alt="Icone de linkedin"></img></a>
                 <a href="https://github.com/Atilian" target="_blank"><img class="ico_dow" src="{% static 'images/ico_github.svg' %}" alt="Icone de github"></img></a>
                 <a href="https://twitter.com/MickaelGascon" target="_blank"><img class="ico_dow" src="{% static 'images/ico_twitter.svg' %}" alt="Icone de twitter"></img></a>
-            </div>
+            </nav>
         </div>
         <!-- FIN SECTION -->
         <!-- DEBUT MAIN -->
-        <div class="main">
-            <div class="body">
+        <div id="main">
+            <div id="body">
                 Body
             </div>
-            <div class="author">
-                <span>© 2021 Gascon Mickael</span><span></span>
+            <div id="author">
+                <span>© 2021 Gascon Mickael</span>
             </div>
         </div>
         <!-- FIN MAIN -->
         <!-- DEBUT PARAMETRE -->
-        <div class="navigation">
-            <input id="button_navigation" class="icone" type="image" src="{% static 'images/navigation.svg' %}"></input>
-            <input id="button_settings" type="image" src="{% static 'images/ico_settings.svg' %}" class="settings">
+        <div id="navigation">
+            <input id="button_navigation" type="image" src="{% static 'images/button_navigation.svg' %}"></input>
+            <input id="button_settings" type="image" src="{% static 'images/button_settings.svg' %}">
         </div>
         <!-- FIN PARAMETRE -->
     </div>
